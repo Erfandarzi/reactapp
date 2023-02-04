@@ -1,13 +1,13 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 import Button from "@mui/material/Button";
-import App from './APP';
-function MyApp() {
-  return <Button variant="contained">Hello World</Button>;
-}
+import App from './Myapp';
 
-ReactDOM.createRoot(document.querySelector("#app")).render(
-  <React.StrictMode>
-    <MyApp />
-  </React.StrictMode>
-);
+
+function APP() {
+  return <Button variant="contained">Hello World</Button>;
+};
+ReactDOM.render(
+
+    <App/>
+, document.getElementById('root'));
